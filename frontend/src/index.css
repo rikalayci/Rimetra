@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 250 246 240;
+  --surface: 255 253 250;
+  --surface2: 246 241 233;
+  --line: 236 228 216;
+  --ink: 36 40 38;
+  --muted: 112 110 104;
+  --brand: 47 93 70;
+  --brandsoft: 228 238 228;
+  --ok: 47 110 74;
+  --okbg: 226 239 225;
+  --bad: 214 70 56;
+  --badbg: 252 228 220;
+  --warn: 196 106 24;
+  --warnbg: 253 235 212;
+  --peach: 248 216 198;
+  --chart-band: 205 226 206;
+  --chart-line: 47 93 70;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 21 23 22;
+  --surface: 30 33 31;
+  --surface2: 37 41 38;
+  --line: 52 57 53;
+  --ink: 236 232 225;
+  --muted: 158 156 148;
+  --brand: 124 182 146;
+  --brandsoft: 38 56 45;
+  --ok: 132 200 152;
+  --okbg: 33 55 41;
+  --bad: 240 122 106;
+  --badbg: 72 36 32;
+  --warn: 238 170 92;
+  --warnbg: 70 51 29;
+  --peach: 88 60 50;
+  --chart-band: 46 74 57;
+  --chart-line: 132 196 156;
+  color-scheme: dark;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  @apply bg-bg text-ink font-sans antialiased;
+  font-feature-settings: "tnum" 1;
+}
+
+@layer components {
+  .card { @apply bg-surface border border-line rounded-card shadow-card; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-brand text-white hover:brightness-110 dark:text-[#10201a]; }
+  .btn-ghost { @apply btn border border-line bg-surface text-ink hover:bg-surface2; }
+  .btn-danger { @apply btn bg-bad text-white hover:brightness-110; }
+  .btn-sm { @apply px-3 py-1.5 text-xs; }
+  .input { @apply w-full rounded-xl border border-line bg-surface px-3 py-2 text-sm outline-none placeholder:text-muted focus:border-brand focus:ring-2 focus:ring-brand/20; }
+  .label { @apply mb-1 block text-xs font-semibold text-muted; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold; }
+  .h-section { @apply flex items-center gap-2 text-lg font-bold; }
+  .table-clean th { @apply px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-muted; }
+  .table-clean td { @apply border-t border-line px-3 py-2 text-sm; }
+}
+
+/* ince kaydırma çubukları */
+* { scrollbar-width: thin; scrollbar-color: rgb(var(--line)) transparent; }
+
+.recharts-cartesian-grid line { stroke: rgb(var(--line)); }
+.recharts-text { fill: rgb(var(--muted)); font-size: 12px; }
+.recharts-tooltip-wrapper { outline: none; }
+
+@media print {
+  header, nav, .no-print { display: none !important; }
+  body { background: white; }
+}

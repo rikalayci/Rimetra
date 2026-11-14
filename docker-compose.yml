@@ -1,0 +1,51 @@
+# Rimetra — tek stack: "rimetra"
+#   rimetra-app : backend (FastAPI) + frontend (React) aynı container'da
+#   rimetra-db  : PostgreSQL 16
+# Portainer / docker compose ls çıktısında tek başlık "rimetra" altında görünür.
+#
+# Çalıştırma:  cp .env.example .env  (düzenleyin)  →  docker compose up -d --build
+
+name: rimetra
+
+services:
+  app:
+    build: .
+    image: rimetra:latest
+    container_name: rimetra-app
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      DATA_PATH: /data
+    ports:
+      - "${APP_PORT:-8080}:8000"
+    volumes:
+      - ${DATA_DIR:-./data}:/data
+    depends_on:
+      db:
+        condition: service_healthy
+    labels:
+      com.rimetra.role: "app"
+
+  db:
+    image: postgres:16-alpine
+    container_name: rimetra-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      TZ: ${TZ:-Europe/Istanbul}
+    volumes:
+      - rimetra-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    labels:
+      com.rimetra.role: "db"
+
+volumes:
+  rimetra-db:
+    name: rimetra-db

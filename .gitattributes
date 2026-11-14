@@ -1,0 +1,5 @@
+# Linux container içinde çalışan dosyalar LF satır sonuyla kalmalı (Windows autocrlf için)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.woff2 binary

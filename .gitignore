@@ -1,0 +1,33 @@
+# Ortam / gizli bilgiler
+.env
+.env.*
+!.env.example
+
+# Çalışma verisi (PDF, avatar, yedek)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+backend/app/static/
+
+# Editör / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+
+# Gerçek tahlil PDF'leri ve yedekler asla depoya girmesin
+*.pdf
+*.tar.enc
+*.sqlite
+*.db

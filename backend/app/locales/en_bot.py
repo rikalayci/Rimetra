@@ -1,0 +1,132 @@
+"""English texts for the Telegram bot. Key = Turkish source text."""
+from __future__ import annotations
+
+BOT_EN: dict[str, str] = {
+    # persistent keyboard / buttons
+    "⚠️ Referans dışı": "⚠️ Out of range",
+    "🧾 Son rapor": "🧾 Latest report",
+    "📋 Raporlar": "📋 Reports",
+    "📈 Tüm değerler": "📈 All values",
+    "👥 Kişi seç": "👥 Choose person",
+    "⏰ Kontroller": "⏰ Check-ups",
+    "📄 Doktor PDF'i": "📄 Doctor PDF",
+    "👥 Kişi değiştir": "👥 Switch person",
+    "◀️ Önceki": "◀️ Previous",
+    "Sonraki ▶️": "Next ▶️",
+    "📎 Orijinal PDF": "📎 Original PDF",
+    "◀️ Yeni": "◀️ Newer",
+    "Eski ▶️": "Older ▶️",
+    "🔙 Kategoriler": "🔙 Categories",
+    "ℹ️ Bu test ne anlatır?": "ℹ️ What does this test tell?",
+    "📈 Geçmişe dön": "📈 Back to history",
+    "🔕 Bildirimleri kapat": "🔕 Turn off notifications",
+    "🔔 Bildirimleri aç": "🔔 Turn on notifications",
+    "🔌 Bu sohbetin bağlantısını kaldır": "🔌 Unlink this chat",
+    "🏠 Menü": "🏠 Menu",
+    "🧾 Raporu aç": "🧾 Open report",
+    "Evet, bağlantıyı kaldır": "Yes, unlink",
+    "Vazgeç": "Cancel",
+    "Test adı yazın: ferritin, şeker, tsh…": "Type a test name: ferritin, glucose, tsh…",
+    # flag / reminder words
+    "yüksek": "high",
+    "düşük": "low",
+    "anormal": "abnormal",
+    "normal": "normal",
+    "zamanı geldi": "due",
+    "hiç yapılmadı": "never done",
+    "yaklaşıyor": "coming up",
+    "zamanı var": "not due yet",
+    # linking / errors
+    "Merhaba! 👋 Bu bot <b>Rimetra</b> aile tahlil sistemine bağlıdır ve hesabınız henüz bağlı değil.\n\n"
+    "Telegram ID'niz: <code>{chat_id}</code>\n\n"
+    "<b>Bağlamak için:</b> Rimetra'yı açın → sağ üstteki profil resminize dokunun → "
+    "<b>Telegram'ı bağla</b>. Açılan bağlantıya dokunmanız yeterli.\n"
+    "Ya da yukarıdaki ID'yi Rimetra yöneticisine verin, hesabınıza eklesin.":
+        "Hello! 👋 This bot is connected to the <b>Rimetra</b> family lab results system, and your account is not linked yet.\n\n"
+        "Your Telegram ID: <code>{chat_id}</code>\n\n"
+        "<b>To link it:</b> open Rimetra → tap your profile picture at the top right → "
+        "<b>Link Telegram</b>. Then just tap the link that opens.\n"
+        "Or give the ID above to your Rimetra administrator to add it to your account.",
+    "Bu bağlantının süresi dolmuş, ama bu sohbet zaten bağlı. /menu": "This link has expired, but this chat is already linked. /menu",
+    "Bu bağlantı geçersiz ya da süresi dolmuş (15 dk). Rimetra'dan yeni bir bağlantı alın.":
+        "This link is invalid or has expired (15 min). Get a new link from Rimetra.",
+    "✅ Bağlandı! Hoş geldin <b>{name}</b>.": "✅ Linked! Welcome <b>{name}</b>.",
+    "Hesabınıza bağlı bir profil yok. Rimetra yöneticisinden profil bağlamasını isteyin.":
+        "No profile is linked to your account. Ask your Rimetra administrator to link one.",
+    "Bir test adı yazın (ör. <i>ferritin</i>) ya da alttaki butonları kullanın.":
+        "Type a test name (e.g. <i>ferritin</i>) or use the buttons below.",
+    "Hazırım! 👇": "Ready! 👇",
+    "Bu komutu tanımıyorum. /yardim": "I don't know this command. /help",
+    "Bu sohbet bir Rimetra hesabına bağlı değil.": "This chat is not linked to a Rimetra account.",
+    "Biraz yavaş 🙂": "A little slower 🙂",
+    "Buna erişim yetkiniz yok.": "You don't have access to this.",
+    "Bu buton artık geçerli değil.": "This button is no longer valid.",
+    "PDF gönderiliyor…": "Sending PDF…",
+    "PDF hazırlanıyor…": "Preparing PDF…",
+    "Bildirimler açıldı": "Notifications on",
+    "Bildirimler kapatıldı": "Notifications off",
+    "Dil değiştirildi: Türkçe 🇹🇷": "Language changed: English 🇬🇧",
+    "Bu sohbetin Rimetra bağlantısı kaldırılsın mı? Tekrar bağlamak için web arayüzünden yeni bağlantı almanız gerekir.":
+        "Unlink this chat from Rimetra? To link it again you will need a new link from the web interface.",
+    "Bağlantı kaldırıldı. Görüşmek üzere 👋": "Unlinked. See you 👋",
+    "Klavye kaldırıldı.": "Keyboard removed.",
+    # screens
+    "👥 <b>Kimin sonuçlarına bakalım?</b>": "👥 <b>Whose results shall we look at?</b>",
+    "son tahlil {date}": "last test {date}",
+    "⚠️ {n} referans dışı": "⚠️ {n} out of range",
+    "⏰ {n} kontrol": "⏰ {n} check-up(s)",
+    "henüz tahlil yok": "no tests yet",
+    "Henüz kayıtlı tahlil yok.": "No lab results saved yet.",
+    "🧾 Son tahlil: <b>{date}</b>  ·  {reports} rapor, {tests} test": "🧾 Last test: <b>{date}</b>  ·  {reports} report(s), {tests} tests",
+    "⚠️ Son değerlerde <b>{n}</b> referans dışı:": "⚠️ <b>{n}</b> out of range in the latest values:",
+    "… ve {n} tane daha": "… and {n} more",
+    "✅ Son değerlerin hepsi referans aralığında.": "✅ All latest values are within the reference range.",
+    "⏰ Zamanı gelen kontrol: ": "⏰ Check-ups due: ",
+    "<i>Bir test adı yazarak da arayabilirsiniz (ör. ferritin).</i>": "<i>You can also search by typing a test name (e.g. ferritin).</i>",
+    "✅ <b>{name}</b>: son ölçümlerin hepsi referans aralığında.": "✅ <b>{name}</b>: all latest measurements are within the reference range.",
+    "⚠️ <b>{name} — referans dışı son değerler</b>": "⚠️ <b>{name} — latest out-of-range values</b>",
+    "<b>üst üste 2+ rapor</b>": "<b>2+ reports in a row</b>",
+    "önceki: {pct}": "previous: {pct}",
+    "<i>Grafik için bir teste dokunun.</i>": "<i>Tap a test for its chart.</i>",
+    "<b>{name}</b> için kayıtlı tahlil yok.": "No lab results saved for <b>{name}</b>.",
+    "{n} sonuç": "{n} results",
+    "⚠️ <b>{n}</b> referans dışı": "⚠️ <b>{n}</b> out of range",
+    "✅ hepsi normal": "✅ all normal",
+    "Bu raporun PDF'i yüklenmemiş.": "No PDF has been uploaded for this report.",
+    "📋 <b>{name} — raporlar</b> ({n})\nAçmak için birine dokunun.": "📋 <b>{name} — reports</b> ({n})\nTap one to open it.",
+    "<b>{name}</b> için kayıtlı değer yok.": "No values saved for <b>{name}</b>.",
+    "📈 <b>{name} — tüm değerler</b>\nBir kategori seçin:": "📈 <b>{name} — all values</b>\nChoose a category:",
+    "<i>Son ölçülen değerler</i>": "<i>Latest measured values</i>",
+    "Test bulunamadı.": "Test not found.",
+    "<b>{name}</b> için <b>{test}</b> ölçümü yok.": "No <b>{test}</b> measurements for <b>{name}</b>.",
+    "Son: {line} · {word}": "Last: {line} · {word}",
+    "Önceki ölçüme göre: <b>{pct}</b>": "Compared with the previous measurement: <b>{pct}</b>",
+    "<i>… toplam {n} ölçüm</i>": "<i>… {n} measurements in total</i>",
+    "🔻 <b>Düşükse:</b> {text}": "🔻 <b>If low:</b> {text}",
+    "🔺 <b>Yüksekse:</b> {text}": "🔺 <b>If high:</b> {text}",
+    "<i>Genel bilgidir, teşhis yerine geçmez. Sonuçlarınızı doktorunuzla değerlendirin.</i>":
+        "<i>General information only, not a diagnosis. Review your results with your doctor.</i>",
+    "⏰ <b>{name}</b> için tanımlı kontrol hatırlatıcısı yok.\n<i>Web arayüzünden (üye sayfası) eklenebilir.</i>":
+        "⏰ No check-up reminders set for <b>{name}</b>.\n<i>They can be added in the web interface (member page).</i>",
+    "⏰ <b>{name} — kontroller</b>": "⏰ <b>{name} — check-ups</b>",
+    "son: {date}": "last: {date}",
+    "henüz ölçülmedi": "not measured yet",
+    "{last} · her {n} ayda bir · hedef {due}": "{last} · every {n} month(s) · due {due}",
+    "📄 {name} — tüm testlerin trend özeti (doktor için)": "📄 {name} — trend summary of all tests (for the doctor)",
+    "⚙️ <b>Ayarlar</b>": "⚙️ <b>Settings</b>",
+    "Hesap: <b>@{user}</b> ({role})": "Account: <b>@{user}</b> ({role})",
+    "yönetici": "administrator",
+    "üye": "member",
+    "Görebildiğiniz kişiler: {names}": "People you can see: {names}",
+    "Yeni tahlil bildirimi: <b>{state}</b>": "New result notifications: <b>{state}</b>",
+    "açık": "on",
+    "kapalı": "off",
+    "Dil: <b>Türkçe</b>": "Language: <b>English</b>",
+    "<i>(Bildirimler sunucu ayarından genel olarak kapalı.)</i>": "<i>(Notifications are turned off globally in the server settings.)</i>",
+    "Biraz daha yazın (ör. <i>ferritin</i>).": "Type a little more (e.g. <i>ferritin</i>).",
+    "<b>{name}</b> için henüz kayıtlı değer yok.": "No values saved for <b>{name}</b> yet.",
+    "🔎 <b>{name}</b> sonuçlarında “{q}” diye bir test bulamadım.\nFarklı bir yazım deneyin ya da <b>📈 Tüm değerler</b>'e bakın.":
+        "🔎 I couldn't find a test called “{q}” in <b>{name}</b>'s results.\nTry a different spelling or look at <b>📈 All values</b>.",
+    "🔎 <b>{name}</b> — “{q}” için hangisi?": "🔎 <b>{name}</b> — which one for “{q}”?",
+    "🆕 <b>{name}</b> için yeni tahlil eklendi": "🆕 New lab result added for <b>{name}</b>",
+}
