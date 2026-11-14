@@ -1,7 +1,5 @@
 # Rimetra — Family Lab Results Tracker
 
-🇹🇷 [Türkçe README](README.md)
-
 A self-hosted web app that collects your family's lab results in one place, shows trends over time, and lets an AI agent enter results through an API / MCP server. It was built around PDFs from **e-Nabız** (Turkey's national health portal), but any lab report can be entered as JSON or by hand.
 
 The interface is available in **Turkish and English** (switch in the profile menu). The Telegram bot, CSV/PDF exports and the built-in test explanations follow the selected language.
@@ -129,5 +127,3 @@ Turkish source texts are used as translation keys:
 - ✅ Anyone, including companies, may install, use, modify and share Rimetra for free, including for internal use.
 - ❌ You may not **sell** Rimetra, or a product or service whose value derives substantially from it (including hosting, setup or support), to third parties.
 - 📝 Keep the copyright and `NOTICE`; mark files you change; don't present "Rimetra" as your own product.
-
-> Because of the Commons Clause this is a **source-available** license, not an OSI-approved open-source license.

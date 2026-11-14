@@ -1,6 +1,6 @@
 # Rimetra — Aile Tahlil Takip Sistemi
 
-🇬🇧 [English README](README.en.md)
+🇬🇧 **English:** [README.en.md](README.en.md)
 
 e-Nabız PDF'lerinden gelen tahlil sonuçlarını aile üyeleri için tek yerde toplayan, trendleri gösteren ve bir yapay zeka ajanının API/MCP üzerinden veri girebildiği, kendi sunucunda çalışan web uygulaması. Ayrıntılı gereksinimler: [`RIMETRA.md`](RIMETRA.md), API: [`docs/api.md`](docs/api.md).
 
@@ -155,5 +155,3 @@ docker-compose.yml
 - ✅ Herkes — şirketler dahil — Rimetra'yı ücretsiz kurup kendi içinde kullanabilir, değiştirebilir ve paylaşabilir.
 - ❌ Rimetra'yı ya da büyük ölçüde ona dayanan bir ürünü/hizmeti (barındırma, kurulum, destek dahil) üçüncü kişilere **ücret karşılığı satmak** yasaktır.
 - 📝 Telif ve `NOTICE` bildirimleri silinemez; değiştirdiğiniz dosyaları belirtmeniz gerekir; "Rimetra" adı başkasının ürünü gibi kullanılamaz.
-
-> Commons Clause eklendiği için bu lisans OSI tanımıyla "açık kaynak" değil, **kaynak kodu açık (source-available)** bir lisanstır.
