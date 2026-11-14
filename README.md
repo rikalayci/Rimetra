@@ -10,6 +10,12 @@ e-Nabız PDF'lerinden gelen tahlil sonuçlarını aile üyeleri için tek yerde 
 
 > Depodaki tüm örnek ve test verileri (kişi adları, kurumlar, tarihler, değerler) kurgusaldır.
 
+## Ekran görüntüleri
+
+| Aile paneli | Test detayı |
+|---|---|
+| ![Aile paneli](docs/screenshots/family_tr.png) | ![Test detayı: trend grafiği ve açıklama](docs/screenshots/test_tr.png) |
+
 ## Kurulum (Ubuntu + Docker)
 
 ```bash

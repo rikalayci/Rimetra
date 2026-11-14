@@ -10,6 +10,12 @@ The interface is available in **Turkish and English** (switch in the profile men
 
 > All sample and test data in this repository (names, facilities, dates, values) is fictional.
 
+## Screenshots
+
+| Family dashboard | Test detail |
+|---|---|
+| ![Family dashboard](docs/screenshots/family_en.png) | ![Test detail: trend chart and explanation](docs/screenshots/test_en.png) |
+
 ## Features
 
 - Sign-in (argon2id passwords, increasing delay after failed attempts); master / member / no-sign-in profile roles; read-only members
